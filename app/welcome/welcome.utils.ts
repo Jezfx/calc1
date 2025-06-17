@@ -1,4 +1,4 @@
-type Calculation = number | string;
+import type { Calculation } from "./welcome.types";
 
 export const calculateCalculation = (calculations: Calculation[]) =>
   calculations.reduce((acc, curr, idx) => {
@@ -7,13 +7,15 @@ export const calculateCalculation = (calculations: Calculation[]) =>
       const operator = calculations[idx - 1];
       switch (operator) {
         case "+":
-          return acc + curr;
+          return (acc as number) + curr;
         case "-":
-          return acc - curr;
+          return (acc as number) - curr;
         case "*":
-          return acc * curr;
+          return (acc as number) * curr;
         case "/":
-          return acc / curr;
+          return (acc as number) / curr;
+        case "%":
+          return (acc as number) % curr;
         default:
           throw new Error(`Unsupported operator: ${operator}`);
       }
