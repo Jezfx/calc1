@@ -1,4 +1,7 @@
 # Calc app 
+<img width="1463" alt="Screenshot 2025-06-17 at 23 23 50" src="https://github.com/user-attachments/assets/45830f82-85d4-4826-bf0d-64206015efd1" />
+
+
 
 ## ⚡️ To run 
 ```
